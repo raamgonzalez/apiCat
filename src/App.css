@@ -1,8 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
 main {
     display: flex;
     flex-direction: column;
     place-items: center;
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
