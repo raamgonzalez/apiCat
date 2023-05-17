@@ -13,15 +13,20 @@ export function App () {
   }
 
   return (
-    <main className='font-serif x bg-slate-100 p-10 w-full h-max'>
-      <h1 className=' text-4xl mt-5 mb-10'>App Gatitos</h1>
-      <button className='bg-orange-200 px-2 py-1 text-lg rounded-md mb-10 shadow-sm shadow-gray-300' onClick={handleClick}>Get new fact </button>
-      {fact && <p className='mb-10 max-w-lg text-lg'>{fact}</p>}
-      <img
-        className='rounded-md shadow-lg shadow-gray-400'
-        src={imageUrl}
-        alt={`Imagen extraida de Api que contiene las tres primeras palabras de ${fact}`}
-      />
+    <main className='font-serif p-10 w-full h-max'>
+      <section className='flex justify-center'>
+        <h1 className='text-6xl mt-5 mb-10 flex'>CatFac<span className='block text-7xl rotate-12'>t</span></h1>
+        <img className='w-7' src='cat_fact.svg' />
+      </section>
+      <button className='bg-red-200 px-3 py-2 text-xl rounded-md mb-10 mt-5 shadow-md shadow-gray-200 hover:bg-orange-100 hover:animate-pulse sm:hover:animate-none md:hover:animate-none' onClick={handleClick}>Get new fact </button>
+      <section className='flex gap-10 mx-auto my-14 sm:flex-col sm:justify-center sm:place-items-center mb:flex-col mb:justify-center mb:mx-2 mb:w-72 mb:text-2xl'>
+        {fact && <p className='mb-10 max-w-lg text-4xl max-w-lg md:text-3xl'>{fact}</p>}
+        <img
+          className='rounded-md shadow-lg shadow-gray-400 max-w-[400px] max-h-[600px] md:w-96'
+          src={imageUrl}
+          alt={`Imagen extraida de Api que contiene las tres primeras palabras de ${fact}`}
+        />
+      </section>
     </main>
   )
 }
