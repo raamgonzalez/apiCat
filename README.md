@@ -1,5 +1,3 @@
-# Prueba técnica para Juniors y Trainees de React en Live Coding.
-
 APIs:
 
 - Facts Random: https://catfact.ninja/fact
